@@ -12,11 +12,18 @@ Getting all articles of a topic is done using API: /api/fetch/ Returns all artic
 
 Status of the system - API: /api/topics Returns all available topics and a count of all articles under each topic.
 
+
 The controller is written in Python / Django. The controller runs on Linux hosts
+
+
 
 Requirements: python -m pip install django django-rest_framework
 
+
+
 To run the server: python3 manage.py runserver
+
+
 
 1. To list all topics: curl http://localhost:8000/api/topics
 
