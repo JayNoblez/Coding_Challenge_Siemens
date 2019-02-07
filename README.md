@@ -18,10 +18,10 @@ Requirements: python -m pip install django django-rest_framework
 
 To run the server: python3 manage.py runserver
 
-To list all topics: curl http://localhost:8000/api/topics
+1. To list all topics: curl http://localhost:8000/api/topics
 
-To add a topic: curl http://localhost:8000/api/add/topic1
+2. To add a topic: curl http://localhost:8000/api/add/topic1
 
-To fetch all articles under a topic: curl http://localhost:8000/api/fetch/topic1
+3. To fetch all articles under a topic: curl http://localhost:8000/api/fetch/topic1
 
-To add an article under a topic: curl http://localhost:8000/api/update/topic1 -d 'article=test article1 for topic1'
+4. To add an article under a topic: curl http://localhost:8000/api/update/topic1 -d 'article=test article1 for topic1'
