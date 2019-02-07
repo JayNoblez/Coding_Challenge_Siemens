@@ -3,23 +3,19 @@ Development of a prototype of a topic modelling intelligence service
 
 In the prototype of this topic-modelling intelligence service, a central python controller exposes an API that enables a user to add a new  topic, get articles of a topic, update a topic with new articles, and also fetch the status of the intelligence service.  
 
-Functionality 1 : Database structure is created with the articles. 
-These articles can be assigned to a predefined topic.
+Database structure is created with the articles under topics. These articles can be assigned to a predefined topic.
 Data can be inserted using insert queries to manually create an example dummy database. 
 
-2. Add a new topic: /api/add/<topic>. 
-Add some dummy articles to the topic in the database.  
-Returns a success or failure response.  
+Add a new topic: /api/add/<topic>. 
+Add some dummy articles to the topic in the database.  Returns a success or failure response.  
   
-3. Getting all articles of a topic  is done using API: /api/fetch/<topic>  
-b.  Functionality:  Returns all articles assigned the topic passed with the request.  
+Getting all articles of a topic  is done using API: /api/fetch/<topic> 
+Returns all articles assigned the topic passed with the request.  
   
-4. Status of the system  - API: /api/topics
-Functionality:  Returns all available topics and a count of all articles under each topic. 
+Status of the system  - API: /api/topics
+Returns all available topics and a count of all articles under each topic. 
 
 The controller is written in Python / Django.  The controller runs on Linux hosts
-
-
 
 
 Requirements
@@ -41,7 +37,6 @@ curl http://localhost:8000/api/add/topic1
 
 3. Fetch all articles under a topic:
 ---------------------------curl http://localhost:8000/api/fetch/topic1
-
 
 4. Add an article under a topic:
 -------------------------------
